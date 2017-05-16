@@ -1,0 +1,75 @@
+public Chain yazchain;
+	
+
+
+yaziknew(1,MY_f_world);
+
+//ropeJointDef.bodyA = yazchain.getSegment(0);
+
+private void yaziknew(int length,World world) {
+		
+		BodyDef bodyDef = new BodyDef();
+		bodyDef.type = BodyType.DynamicBody;
+
+		float  radisu2=0.16f;
+
+		
+		CircleShape shape = new CircleShape();
+		shape.setRadius(radisu2/2);
+			
+		RevoluteJointDef revoluteJointDef = new RevoluteJointDef();
+		revoluteJointDef.localAnchorA.set(0, -radisu2/4);
+		revoluteJointDef.localAnchorB.set(0, radisu2/4);
+		
+		/*PolygonShape shape = new PolygonShape();
+		shape.setAsBox(0.05f, 0.15f);
+
+	
+		RevoluteJointDef revoluteJointDef = new RevoluteJointDef();
+		revoluteJointDef.localAnchorA.set(0, -0.5f);
+		revoluteJointDef.localAnchorB.set(0, 0.5f);*/
+		
+		Filter f1 = new Filter();
+		f1.groupIndex =-1;
+		
+		
+	
+		
+		yazchain = new Chain(8, new DefShapeBuilder(world, bodyDef, shape, 1, revoluteJointDef));
+		
+		
+		for(int i = 0; i < yazchain.length(); i++){
+			yazchain.getSegment(i).setActive(false);
+			yazchain.getSegment(i).getFixtureList().get(0).setFilterData(f1);
+			yazchain.getSegment(i).getFixtureList().get(0).setUserData("yazik_segment");
+	
+			yazchain.getSegment(i).setTransform(12,2.5f,0);
+		}
+		
+		
+		
+		shape.dispose();
+	}
+
+
+
+
+	public void Ropeshootchain(float x,float y) {
+	
+		yazik.setTransform(myLizard.getBody().getPosition().x, myLizard.getBody().getPosition().y, 0);
+		yazik.setActive(true);
+	//	segments[0].setTransform(myLizard.getBody().getPosition().x, myLizard.getBody().getPosition().y, 0);
+		
+				
+		for(int i = 0; i < yazchain.length(); i++){
+			yazchain.getSegment(0).setTransform(myLizard.getBody().getPosition().x, myLizard.getBody().getPosition().y, 0);}
+		yazchain.getSegment(0).setActive(true);
+		for(int i = 1; i <  yazchain.length(); i++){
+			
+		//	segments[0].setType(BodyType.StaticBody);
+		
+			
+			yazchain.getSegment(i).setActive(true);
+			yazchain.getSegment(i).applyLinearImpulse(new Vector2(-i*0.01f,-i*0.01f), segments[i].getPosition(), true);
+				
+			}}

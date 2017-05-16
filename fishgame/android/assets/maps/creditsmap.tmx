@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="16" tileheight="16" nextobjectid="66">
+ <properties>
+  <property name="dlinamap" value="50.0"/>
+  <property name="startPlayX" value="24"/>
+  <property name="startPlayY" value="28"/>
+  <property name="unitScale" value="0.03125"/>
+  <property name="visotamap" value="30.0"/>
+ </properties>
+ <tileset firstgid="1" name="maptiles" tilewidth="16" tileheight="16" spacing="2" margin="1">
+  <image source="maptiles.png" trans="000000" width="576" height="576"/>
+ </tileset>
+ <layer name="wall" width="50" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1UcRQkEURNEZkg+iD8LHB9EH0cd84Psg+iDq4FpgQ71X1YuzaQF9Uwghxw57HFAgOduPOOGMC664OdzveOCJF974ONxjDKGEMiqoohb97XU00EQLbXQc7l300McAGYYO9xHGmGCKGeYO9wWWWGGNDbYO9/Snf1c/1A8LPVA/bPVA/bDVA/XDVg/UD1s9UD9s9UD9sNUD9cNWD9QPWz1QP2z14Nf9C+5Yp+0=
+  </data>
+ </layer>
+ <layer name="mebel" width="50" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt00EKgDAMRNH2ft6sN/NU0oVYCoYxCib6H2TdP6ClAAC8lnp+EVh9Su/VHXfe8nY/9abXWo9TvNVpGdvHPeqmCPbWuT/Ths7akWnT2KnuaMF29Z429TbxosvyHSky/Reqr+0BAAD4mw3FKTnd
+  </data>
+ </layer>
+ <layer name="shadow" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+ <objectgroup name="box2d">
+  <properties>
+   <property name="body" value="environment"/>
+  </properties>
+  <object id="1" name="environment" type="object" x="0" y="0">
+   <properties>
+    <property name="userData" value="123123"/>
+   </properties>
+   <polyline points="720,575 735,562 1056,544 1056,-64 771,-80"/>
+  </object>
+  <object id="21" name="book" type="object" x="720" y="32" width="64" height="64">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="button_verx"/>
+   </properties>
+  </object>
+  <object id="49" name="book" type="object" x="32" y="48" width="656" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="button_text"/>
+   </properties>
+  </object>
+  <object id="64" name="book" type="object" x="720" y="400" width="64" height="64">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="button_vniz"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

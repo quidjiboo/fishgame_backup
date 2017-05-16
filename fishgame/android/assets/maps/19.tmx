@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="84" height="54" tilewidth="16" tileheight="16" nextobjectid="99">
+ <properties>
+  <property name="dlinamap" value="84"/>
+  <property name="startPlayX" value="3"/>
+  <property name="startPlayY" value="3"/>
+  <property name="unitScale" value="0.03125"/>
+  <property name="visotamap" value="54"/>
+  <property name="what_en" value="level19_en.txt"/>
+  <property name="what_ru" value="level19_ru.txt"/>
+ </properties>
+ <tileset firstgid="1" name="maptiles" tilewidth="16" tileheight="16" spacing="2" margin="1">
+  <image source="maptiles.png" trans="000000" width="576" height="576"/>
+ </tileset>
+ <layer name="wall" width="84" height="54">
+  <data encoding="base64" compression="zlib">
+   eJztmUluwkAQRcvOsIM7ZNzBGTIr2eQMgQyCTc4AZDhH5nM44y7hDGTakTPkW7hFB3WiYDflRl2Lp5Lczbf0Kb6+RDmkqATKMq3NdkBREbMQykw74eFO7OdLQI1n0AqIKqAKdsEDEe1h7oMD0ATxnQ6ev4I36t15Bx/gk/p3fNSBhwQv6QtedhM/1eeOkvvHmCfgVDsLQAgmkjuTmFNgWrvjo0635yXp+3mOOxfgMvmOrsA1uNG+oxkwC+YSzXnMBbCovc9HHdN+3uL5HbhP7sc8giftvctgBawm713DXAcb2nt91DHtZ8eRLBpHHdN+2s6iGtFSnSgaNXhPlHfGmvbTdhZt4tkWA3hPI++MNe2n7Szi9DPvjDXtp+0s4vQz74zl6J+cfvrQPzn99KF/cvrpQ//k9NOH/snpp/RPu35K/7Trp/RPu35K/7Trp/RPu35K/7Trpw/9swbqDNQ86Z8+6XD0T590OPqnTzoc/dMnHfn/ffz6p0868v/7+PVPn3Skf0r/dFlH+qf0T5d1pH9K/3RZR/qn9E+XdaR/9nWaFnSkf/7Uiaf0T3s68cyrf1ZA9a8sSs7zzrRhdNRvPo/+GfvVot8zTZ27kI3D6DQz6GTpn/p+mrJInbuSjf/VUTvK3T91P01ZpM5dyUYOnSz9s6L93k1ZpM5dyUYOnSz9U99PUxapc5eycdQ6Wfqn7qcpi9S5S9k4ap0s/VP305RF6jzvTOPUGdzPbZwL6Rncz0M8E9IT72c5JCqBdkBnBcwikJlutjU/Zdqb33t3C0E=
+  </data>
+ </layer>
+ <layer name="mebel" width="84" height="54">
+  <data encoding="base64" compression="zlib">
+   eJztWmlSE0EU7lAu7OEKAsoWliOopaKAwhFwKxUs9QijIiCuR8g/RVE5Qv65K7dwQ+UIfl0zr9Jpu2eSdGeWpL+qryZJ97zp/vLm9euZx5iDg4ODg4ODg4ODGmvgetKDaCI8A58nPYgmwUPwEfgk4NNkh5N5QMvFPRyJnxgrJTuibAP6sc+srOd2ledN5BibBKdyDRtaJkH++RV8zar3z3PQcR5ccHpWoBt69ID54NgXos+q8PkG+t0Ebzk9K3ARvGSJl2Mee1qxovn9XpV9Vf1aGXcb1LdV0Qp6vgc/xHStVtDzB/gzpmutRORI4roe1Tet6EAe0mkxF2mGdfwK9LgKXgOXatRmBP1HG5jb6dbkNK/fa9BjHbwPbtSozRn0n0kgV057fGwHO2JkJ9hlMN606zkMjsTE0YBjBuNNu55ZA63fqxH9HNRohnU/zahnLU/L+m8b7r2aXYjv1TbBFwmOJevoBnvAXon4zRM/o5+X2CAzhAI4Dk6EEO1eocX0rDdPmQPzYJ+eHtq9uZToGfY+z9azNV3uUk0ewvWcBKfAswrid28yRXqGvc+jZ2s8/puusXLuEZWL8HXnJfP1nAcX9PTmU6Rn2Ps8erbG5xZ37Qq/5kfm66nyS5lp0ZPL2GZOr8235ZmOh/tkV86/J34xO/GzS/KVGXDWdKAaHAL7zen1+7Y80/FwnxzD/AvBfWEjfpI9whK4bDrQEAyCt8F94H7wgMCDQVtEuzdo6X7jPkk5O6dJ/JSf05LdDfCBjcFqQHry42HwiMAhVtYzpN1YT7kejmribMRPle3HwbERNXh0z58AT4KnhON00DYgtEPDIqfQ7pne63I9HNXE2YifKtt/NdczmYOIY+BxVhkXB1h07KTzTLENPeT58Zo4G/FTZfuPoOcrVlsNXjU4D16I8TwZO8GcaW57/m9W8k+V7d8K/9yxMA8C1+VOjOfJCPNP0/ipsr2r0DPr/knrL197t1h5Xm+C45bvd8bxk9uGftwnK4h7nsfRiuvVOZX/EIee8vMAeo/P3+HbiJ9v8f2d4roq26r1SOWfOptRiON+l2ttRP9UzbnW+PkN378rrhu1HoXFT53NKDTCP+V8Wq61oZyd7zGp3v0Lqz9+HoTtdsVzCJVt1XpE/snHRLm/zmYUGqGnXJdDtTbY/xWxpy5iD1jC5xLfY4o5oljzXmDs6Dg4gc86jvv9SkOwPZwr7/8JqvxzV3M93n8W588F+ymyaVOXes+T/ZNqbaBjkf5/zL3E95hU794b1Lzng5p3em+uq38T26fR/3Sucv+/qbGNtWcxL3wXa+yXcbwe/Cdk08HBwcHBDP8Ack6nsQ==
+  </data>
+ </layer>
+ <layer name="shadow" width="84" height="54">
+  <data encoding="base64" compression="zlib">
+   eJzt2bENwjAQBdDLQsAKMACwAhSUkBkyOUeRImWQwZH9nvRLS9bXWY7iCAAAAACAuh6FAwD8j3scAPrh3gegZ7shYp85DLV30oZz9njJXH/YZ0/fIc/s8ZUZzScANOeYOcX6/y7zOpZumXus73Nex9Knlym+63OqsN+tM59l6bMs570s81mWPsvaap/eIAHa8AbZeFqj
+  </data>
+ </layer>
+ <objectgroup name="box2d">
+  <properties>
+   <property name="body" value="environment"/>
+  </properties>
+  <object id="1" name="environment" type="object" x="32" y="32">
+   <properties>
+    <property name="userData" value="123123"/>
+   </properties>
+   <polyline points="0,0 0,800 1280,800 1280,0 0,0"/>
+  </object>
+  <object id="2" name="book" type="object" x="530" y="437" width="16" height="80">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="book_body 1"/>
+   </properties>
+  </object>
+  <object id="3" name="flour" type="object" x="27" y="801">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+   <polyline points="0,0 1280,0"/>
+  </object>
+  <object id="4" name="flour" type="fixture" x="128" y="576">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+   <polyline points="0,1 319,1 319,30 302,29 303,79 17,78 17,30 2,31 1,4"/>
+  </object>
+  <object id="6" name="flour" type="fixture" x="496" y="800">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+   <polyline points="0,0 0,-48 64,-48 64,-80 96,-80 96,-48 96,-32 128,-32 128,-96 176,-96 176,-176 208,-176 208,-224 240,-224 240,-256 272,-256 272,-320 288,-320 288,-352 320,-352 320,-320 336,-320 336,-336 368,-336 368,-320 448,-320 448,-80 480,-80 480,-32 512,-32 512,-16 544,-16 544,-176 512,-176 512,-192 544,-192 544,-224 560,-224 560,-208 576,-208 576,-192 608,-192 608,-224 640,-224 640,-176 720,-176 720,0 736,0 736,-48 784,-48 784,-80 816,-80"/>
+  </object>
+  <object id="7" name="flour" type="fixture" x="992" y="416" width="320" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+  </object>
+  <object id="8" name="flour" type="fixture" x="896" y="320" width="320" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+  </object>
+  <object id="9" name="flour" type="fixture" x="992" y="224" width="320" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="fdghgfh"/>
+   </properties>
+  </object>
+  <object id="10" name="flour" type="fixture" x="352" y="368" width="464" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+  </object>
+  <object id="11" name="flour" type="fixture" x="576" y="288" width="32" height="80">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+  </object>
+  <object id="12" name="flour" type="fixture" x="336" y="336" width="64" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="fgfdgfd"/>
+   </properties>
+  </object>
+  <object id="13" name="flour" type="fixture" x="224" y="576">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+   <polyline points="16,0 16,-48 48,-48 48,-16 64,-16 64,-32 96,-32 96,0"/>
+  </object>
+  <object id="16" name="water" type="object" x="131" y="538">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="StaticBody"/>
+    <property name="userData" value="water"/>
+   </properties>
+   <polyline points="0,15 8,25 34,25 43,14"/>
+  </object>
+  <object id="17" name="flour" type="fixture" x="130" y="560">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="dfdf"/>
+   </properties>
+   <polyline points="2,5 0,-32 -2,-32 -2,16 46,16 46,-32 44,-32 42,5"/>
+  </object>
+  <object id="18" name="baloon" type="object" x="160" y="176" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="0"/>
+    <property name="userData" value="baloon 2"/>
+   </properties>
+  </object>
+  <object id="19" name="book" type="object" x="876" y="395" width="16" height="80">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="book_body 1"/>
+   </properties>
+  </object>
+  <object id="27" name="asrc" type="object" x="144" y="768" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcdjh2oweekplgun"/>
+   </properties>
+  </object>
+  <object id="28" name="Energycell" type="object" x="192" y="448" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="energycell"/>
+   </properties>
+  </object>
+  <object id="30" name="pushka" type="object" x="553" y="510" width="32" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="pushka_000"/>
+   </properties>
+  </object>
+  <object id="31" name="pushka" type="object" x="928" y="304" width="32" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="pushka_135"/>
+   </properties>
+  </object>
+  <object id="32" name="pushka" type="object" x="241" y="507" width="32" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="pushka_090"/>
+   </properties>
+  </object>
+  <object id="34" name="book" type="object" x="472.667" y="714.667" width="16" height="80">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="book_body 1"/>
+   </properties>
+  </object>
+  <object id="35" name="Energycell" type="object" x="725" y="498" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="energycell"/>
+   </properties>
+  </object>
+  <object id="37" name="asrc" type="object" x="670" y="587" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcdjh2oweekplgun"/>
+   </properties>
+  </object>
+  <object id="38" name="asrc" type="object" x="1168" y="592" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcdjh2oweekplgun"/>
+   </properties>
+  </object>
+  <object id="39" name="asrc" type="object" x="410" y="535" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcdjh2oweekplgun"/>
+   </properties>
+  </object>
+  <object id="40" name="baloon" type="object" x="639.333" y="176.333" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="0"/>
+    <property name="userData" value="baloon 2"/>
+   </properties>
+  </object>
+  <object id="42" name="book" type="object" x="976" y="688" width="16" height="80">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="book_body 1"/>
+   </properties>
+  </object>
+  <object id="43" name="book" type="object" x="192" y="496" width="32" height="80">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="book_body 3"/>
+   </properties>
+  </object>
+  <object id="44" name="platfr" type="object" x="64" y="256" width="16" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="0"/>
+    <property name="userData" value="platfr 14"/>
+   </properties>
+  </object>
+  <object id="47" name="necar" type="object" x="619.667" y="700.667">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="0"/>
+    <property name="userData" value="small_car"/>
+   </properties>
+   <polygon points="0,0 32,0 32.0303,-21.6364 25,-31 8,-31 0.030303,-21.6364"/>
+  </object>
+  <object id="49" name="coub_long" type="object" x="256" y="752" width="16" height="48">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="coub_long 1"/>
+   </properties>
+  </object>
+  <object id="50" name="coub_long" type="object" x="480" y="320" width="48" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="coub_long 2"/>
+   </properties>
+  </object>
+  <object id="51" name="coub_small" type="object" x="224" y="784" width="16" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="coub_small"/>
+   </properties>
+  </object>
+  <object id="52" name="coub_small" type="object" x="240" y="784" width="16" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="coub_small"/>
+   </properties>
+  </object>
+  <object id="55" name="pool_balll" type="object" x="816" y="432" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="pool_ball"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="58" name="vrag" type="object" x="743" y="310" width="32" height="48">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="trinity"/>
+   </properties>
+  </object>
+  <object id="61" name="vrag" type="object" x="1104" y="144" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="vrag"/>
+   </properties>
+  </object>
+  <object id="62" name="vrag" type="object" x="519" y="223" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="vrag"/>
+   </properties>
+  </object>
+  <object id="63" name="vrag" type="object" x="1189" y="495" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="vrag"/>
+   </properties>
+  </object>
+  <object id="64" name="necar" type="object" x="1088" y="320">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="0"/>
+    <property name="userData" value="small_car"/>
+   </properties>
+   <polygon points="0,0 32,0 32.0303,-21.6364 25,-31 8,-31 0.030303,-21.6364"/>
+  </object>
+  <object id="70" name="flour" type="fixture" x="1218.25" y="207.25">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="dfdf"/>
+   </properties>
+   <polyline points="2,5 0,-32 -2,-32 -2,16 46,16 46,-32 44,-32 42,5"/>
+  </object>
+  <object id="71" name="water" type="object" x="1219.25" y="185.25">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="StaticBody"/>
+    <property name="userData" value="water"/>
+   </properties>
+   <polyline points="0,15 8,25 34,25 43,14"/>
+  </object>
+  <object id="72" name="coub_small" type="object" x="496" y="352" width="16" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="coub_small"/>
+   </properties>
+  </object>
+  <object id="73" name="coub_small" type="object" x="496" y="336" width="16" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="coub_small"/>
+   </properties>
+  </object>
+  <object id="75" name="pool_balll" type="object" x="224" y="752" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="pool_ball"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="78" name="platfr_goriz" type="object" x="240" y="304" width="32" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="0"/>
+    <property name="userData" value="plagor 5"/>
+   </properties>
+  </object>
+  <object id="79" name="coub_long" type="object" x="592" y="720" width="16" height="48">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="coub_long 1"/>
+   </properties>
+  </object>
+  <object id="80" name="vrag" type="object" x="405.333" y="748" width="32" height="48">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="trinity"/>
+   </properties>
+  </object>
+  <object id="84" name="Energycell" type="object" x="1272" y="189" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="energycell"/>
+   </properties>
+  </object>
+  <object id="85" name="asrc" type="object" x="368" y="544" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcgun"/>
+   </properties>
+  </object>
+  <object id="86" name="asrc" type="object" x="352" y="304" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcgun"/>
+   </properties>
+  </object>
+  <object id="87" name="asrc" type="object" x="1060" y="555" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcgun"/>
+   </properties>
+  </object>
+  <object id="88" name="asrc" type="object" x="968" y="653" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcgun"/>
+   </properties>
+  </object>
+  <object id="89" name="asrc" type="object" x="1280" y="688" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcdjh2oweekplgun"/>
+   </properties>
+  </object>
+  <object id="90" name="Energycell" type="object" x="1216" y="720" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="energycell"/>
+   </properties>
+  </object>
+  <object id="91" name="flour" type="fixture" x="528" y="528" width="112" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="fgfdgfd"/>
+   </properties>
+  </object>
+  <object id="93" name="flour" type="fixture" x="1088" y="400" width="16" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="small_car"/>
+   </properties>
+  </object>
+  <object id="94" name="flour" type="fixture" x="1136" y="304" width="16" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="small_car"/>
+   </properties>
+  </object>
+  <object id="95" name="flour" type="fixture" x="1168" y="208" width="16" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="small_car"/>
+   </properties>
+  </object>
+  <object id="96" name="asrc" type="object" x="1216" y="384" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcgun"/>
+   </properties>
+  </object>
+  <object id="97" name="asrc" type="object" x="1184" y="384" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="asrcgun"/>
+   </properties>
+  </object>
+  <object id="98" name="portal" type="object" x="48" y="800">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="portal_body"/>
+   </properties>
+   <polygon points="0,0 8.125,-1.75 23,-1.625 32,0 0,0"/>
+  </object>
+ </objectgroup>
+</map>

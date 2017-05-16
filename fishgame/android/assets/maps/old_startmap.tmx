@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="16" tileheight="16" nextobjectid="19">
+ <properties>
+  <property name="dlinamap" value="50.0"/>
+  <property name="startPlayX" value="24"/>
+  <property name="startPlayY" value="28"/>
+  <property name="unitScale" value="0.03125"/>
+  <property name="visotamap" value="30.0"/>
+ </properties>
+ <tileset firstgid="1" name="123123" tilewidth="16" tileheight="16" spacing="2" margin="1">
+  <image source="123123.png" trans="000000" width="576" height="576"/>
+ </tileset>
+ <layer name="wall" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1VtOwkAUxvEZEPaBt30IavTFPYjS6AtrKIjsAwT2gRfe6B6Uy1tdg/8J+FJInBP7cNJMk1+afEmbmZzkfIk1cbI1x9gYc4VrZThTPOTNGU2yxzdn/5XiQ/E9XnmnmzPvSDLzWCm+x5dgHhWr9x4l6z+PE8X3OLT+87hQfI+6YB4tsge+e9Ql5kxxUzCPZ7I+OujiCT1oyX3n4fpjggHcvn7BCP/N/3p8/yPpjxmmcPv6De/Qkkv6Y41PuH29wBJackl/VGHh9nUZB9CSS/rjFDW4fX2EY2jJJf1xiTO4fd3AObTkkv6IcAu3r+9wDy156I98+iOvPPRH6I/QH6E/Qn+E/tDYH1Emjzz/E4X+KGR/3JhiaBfED00YOIQ=
+  </data>
+ </layer>
+ <layer name="mebel" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1llOwlAUxvHTJ0fEXThG3YUKRt2DGhWMugSfBAGHJfjmGGUXzsMunMEl+G9S5IZ0AGm41Nwv+eWWlt6e05YbRExMTExMTMLJAhYDLIU4Vz3qvZ7J/8qYJTKOCUt3Jc1llvrnMB/xPtapfwObEewjaC0ya4y+XOEaN7jVXEszecEr3vCODLJaK/pbOvh9d6IL3Thi33HAOQkkW1BbIxmg9kEMYRjLWMEqUuhxWcdSSLe8Uv9MUucUppFABlnsIIcRjDq9nDjn5JDXVbBHCtjFvsL+vOdsf7scs8cDHcX6pCiyZddqu3BGL58ih5Xtop5yPaP2UfGARzzV7P9q4z7O5fde23VKCWVxfx4lp49Lab8+7sX/XVKVlefxrMxxJtU1QFca6UOlPo87JFnTZkL+r3mKbY9j6n2zv9PLtePoQ8wZ4zViLsf7kUcBH8yTZlyzqvOaRDM/3Bl81A==
+  </data>
+ </layer>
+ <layer name="shadow" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1sEJgDAMQNF0IXUSdQqP6v4ns4AQKrFJ+A9ytflYRBFEdXSOxzN7z6ODDq+OXn+e5YmOWKp0VDI1kVlnaaM3+WbV/TedPXnHqftfOnfyDgu+A/4y/G9Y0EEH3lV5H1U6EIv1vnCvgHEeOl94Ww==
+  </data>
+ </layer>
+ <objectgroup name="box2d">
+  <properties>
+   <property name="body" value="environment"/>
+  </properties>
+  <object id="1" name="environment" type="object" x="0" y="0">
+   <properties>
+    <property name="userData" value="123123"/>
+   </properties>
+   <polyline points="0,-64 0,544 1104,544 1104,-64 0,-64"/>
+  </object>
+  <object id="2" name="flour" type="fixture" x="80" y="128" width="160" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+  </object>
+  <object id="3" name="Energycell" type="object" x="33" y="570" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="energycell"/>
+   </properties>
+  </object>
+  <object id="4" name="flour" type="fixture" x="384" y="128" width="304" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+  </object>
+  <object id="5" name="flour" type="fixture" x="240" y="224" width="144" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+  </object>
+  <object id="6" name="water" type="object" x="290" y="185">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="StaticBody"/>
+    <property name="userData" value="water"/>
+   </properties>
+   <polyline points="0,15 8,25 34,25 43,14"/>
+  </object>
+  <object id="7" name="flour" type="fixture" x="289" y="207">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="dfdf"/>
+   </properties>
+   <polyline points="2,5 0,-32 -2,-32 -2,16 46,16 46,-32 44,-32 42,5"/>
+  </object>
+  <object id="8" name="portal" type="object" x="621" y="119" width="31" height="4">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="portal_body"/>
+   </properties>
+  </object>
+  <object id="9" name="flour" type="fixture" x="3" y="472" width="796" height="4">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+  </object>
+  <object id="10" name="alien" type="object" x="87" y="93" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="alien"/>
+   </properties>
+  </object>
+  <object id="11" name="alienspaceship" type="object" x="928" y="16" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="tarelka"/>
+   </properties>
+  </object>
+  <object id="12" name="spaceorb" type="object" x="1056" y="2" width="32" height="32">
+   <properties>
+    <property name="body" value="environment1"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="orb"/>
+   </properties>
+  </object>
+  <object id="13" name="flour1" type="object" x="288" y="256" width="240" height="64">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="start"/>
+   </properties>
+  </object>
+  <object id="15" name="flour1" type="object" x="288" y="336" width="240" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="credits"/>
+   </properties>
+  </object>
+  <object id="16" name="flour1" type="object" x="432" y="224" width="48" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="lang"/>
+   </properties>
+  </object>
+  <object id="17" name="flour1" type="object" x="256" y="400" width="144" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="muz"/>
+   </properties>
+  </object>
+  <object id="18" name="flour1" type="object" x="416" y="400" width="144" height="16">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="sfx"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

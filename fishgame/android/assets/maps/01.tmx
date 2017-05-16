@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="44" height="40" tilewidth="16" tileheight="16" nextobjectid="91">
+ <properties>
+  <property name="dlinamap" value="44"/>
+  <property name="jumpornot" value="false"/>
+  <property name="namelevel" value="test"/>
+  <property name="startPlayX" value="3"/>
+  <property name="startPlayY" value="4"/>
+  <property name="unitScale" value="0.03125"/>
+  <property name="visotamap" value="34"/>
+  <property name="what_en" value="level1_en.txt"/>
+  <property name="what_ru" value="level1_ru.txt"/>
+ </properties>
+ <tileset firstgid="1" name="maptiles" tilewidth="16" tileheight="16" spacing="2" margin="1">
+  <image source="maptiles.png" width="576" height="576"/>
+ </tileset>
+ <layer name="wall" width="44" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1LcNAkAQRNHjDsgpAZtTArYPbB/YPrB9YPvA1sGPtwBYofnSSyZebQhKKaXU/9ZLIfQxwBAjjJOf3TZhm2KGORZYJj+7bRVDWGODLXbYRz+77cB2xAlnXHCNfnbbje2OB5544R397LYMNxKRkEUO+eRntxXZSiijgipqyc9ua7A10UIbHXSTn13/V/9X/1f/V/9X/1f/9/e7/q/+r/6v/u+//t+Cc7a6c+o7fQBr5On4
+  </data>
+ </layer>
+ <layer name="mebel" width="44" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmD0OAUEYQL9dBYp1DSocQUeFW/gpcASdn4twDB0K9hhonMFLVmOyIlvMzqx8L3mZyUwxL7ubbDIiiqIoiguegSwLpFwDOcRYC+UQhf6ONHauicsLun7Pv7gkz1a01w7aaxfttYv22kV77aK9dtFeu2ivXf659xiKnPAc5hSXQpbeG513fBSkt1wSqWC1lFNcCj5/v0c8GWs+997wbqyZvU3mLWwHLgo/KdNQMTrM3j7zAQ4d9I44c4wTnGIdG7hib/2ld8Z8jgsHvSvOXOMGt9jFHu7Y23/pzb8yG0XujTHiX1BDX8f43evBHWmm+9QXu9IybA==
+  </data>
+ </layer>
+ <layer name="shadow" width="44" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20JT6AAAAAAAACAlwEbgAAB
+  </data>
+ </layer>
+ <layer name="back" width="44" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJACAMAMHgsM7mmDa2NhLQ4B18/xEAAAAAwG9Gu31Alr6qwm+uvulV1X7h1AQ1JgfX
+  </data>
+ </layer>
+ <objectgroup name="box2d">
+  <properties>
+   <property name="body" value="environment"/>
+  </properties>
+  <object id="84" name="environment" type="object" x="0" y="160">
+   <properties>
+    <property name="userData" value="123123"/>
+   </properties>
+   <polyline points="29.3333,20 32,448 672,448 672,0 29,0"/>
+  </object>
+  <object id="85" name="flour" type="object" x="720" y="832">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+   <polyline points="-688,-256 -48,-256"/>
+  </object>
+  <object id="86" name="Energycell" type="object" x="326" y="540" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="energycell"/>
+   </properties>
+  </object>
+  <object id="88" name="flour" type="object" x="32" y="528" width="48" height="48">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+  </object>
+  <object id="89" name="flour" type="object" x="624" y="544" width="32" height="32">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="userData" value="YES_ON"/>
+   </properties>
+  </object>
+  <object id="90" name="portal" type="object" x="542.167" y="575.33">
+   <properties>
+    <property name="body" value="environment"/>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="1"/>
+    <property name="userData" value="portal_body"/>
+   </properties>
+   <polygon points="0,0 8.125,-1.75 23,-1.625 32,0 0,0"/>
+  </object>
+ </objectgroup>
+</map>
